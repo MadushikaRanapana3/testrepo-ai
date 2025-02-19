@@ -6,7 +6,7 @@ name: testai-pr_pr-default-dev_app_76e9b3b Pipeline (Skyu Generated)
       - synchronize
   workflow_dispatch: {}
   repository_dispatch:
-    types: pipeline_a3e1ba18-ea17-4e30-8445-fcaddb95a853
+    types: pipeline_40f559e1-ae20-43e3-8475-77b4e4026501
 env:
   ENCODED_PIPELINE_SECRET: ${{secrets.TESTREPOAI_TESTAIPR_PRDEFAULTDEV_APP_76E9B3B}}
   COMMIT_ID: ${{github.event.client_payload.commitId || github.sha || github.run_id}}
