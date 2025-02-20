@@ -544,6 +544,8 @@ jobs:
     needs:
       - code-scan
       - _status_testing
+      - code-scan
+      - _status_testing
       - build-and-push
       - deploy
     permissions: write-all
@@ -620,6 +622,8 @@ jobs:
               fi
               
     needs:
+      - code-scan
+      - _status_testing
       - code-scan
       - _status_testing
       - build-and-push
@@ -708,6 +712,7 @@ jobs:
             
     needs:
       - build-and-push
+      - _status_testing
     permissions: write-all
     if: >-
       needs.build-and-push.outputs.stepsCanProceed == 'true' &&
